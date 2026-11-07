@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Error | Game Developer</title>
+<meta name="description" content="Error: game developer working in Unreal Engine. Games, socials, websites and contact.">
+<meta name="theme-color" content="#050507">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Comic+Neue:wght@700&family=Bangers&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body class="ld">
+<div id="load"><div>Error<i></i></div></div>
+<div class="bg"></div><div class="vig"></div><div class="grain" aria-hidden="true"></div>
+<div class="sf" id="sf"></div>
+<button class="mb glass ui" id="mb" aria-label="Toggle music"><i class="fa-solid fa-volume-xmark" id="mi"></i></button>
+<nav class="nav glass ui" id="nav" aria-label="Categories">
+  <a href="#home" class="on">Home</a><a href="#socials">Socials</a><a href="#games">Games</a><a href="#sites">Websites</a><a href="#contact">Contact</a>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="bio ui">
+    <h2>Hello,<br>I&rsquo;m Error.</h2>
+    <p>I create <b>game-related projects</b> and develop games in <b>Unreal Engine</b>.</p>
+    <div class="mail">
+      <a href="mailto:error@corita.gg"><i class="fa-solid fa-envelope"></i>error@corita.gg</a>
+      <a href="mailto:hi@errorr.cc.cd"><i class="fa-solid fa-briefcase"></i>hi@errorr.cc.cd</a>
+    </div>
+    <span class="hint" id="hint"><i class="fa-solid fa-crosshairs"></i>Tap her, if you dare</span>
+  </div>
+</section>
+
+<div class="sec rv" id="socials">
+  <div class="head"><small>01</small><h2>Socials</h2><p>Find me across the web.</p></div>
+  <div class="grid gs" id="tiles"></div>
+</div>
+
+<div class="sec rv" id="games">
+  <div class="head"><small>02</small><h2>Games</h2><p>The titles I play, and the profiles behind them.</p></div>
+  <div class="grid g2">
+    <a class="card glass rev" style="--c:#ff4655" href="https://tracker.gg/valorant/profile/riot/error%2307105/overview" target="_blank" rel="noopener" aria-label="Valorant">
+      <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5l9.2 11.6h-5L2 11.4zM22 5.5V13l-7.7 9H10.4z"/></svg></span>
+      <div><b>Valorant</b><span>error#07105 &middot; Level 113</span></div><em class="fa-solid fa-arrow-up-right-from-square"></em>
+    </a>
+    <a class="card glass rev" style="--c:#e2231a" href="https://www.roblox.com/search/users?keyword=Error" target="_blank" rel="noopener" aria-label="Roblox">
+      <i class="ic fa-brands fa-roblox"></i>
+      <div><b>Roblox</b><span>Error</span></div><em class="fa-solid fa-arrow-up-right-from-square"></em>
+    </a>
+  </div>
+</div>
+
+<div class="sec rv" id="sites">
+  <div class="head"><small>03</small><h2>Websites &amp; Projects</h2><p>Live previews of my websites. Select a preview to open the full site.</p></div>
+  <div class="grid g2" id="sitegrid"></div>
+</div>
+
+<div class="sec rv" id="contact">
+  <div class="head"><small>04</small><h2>Contact</h2><p>For general messages, use email. For business or collaboration requests, use inquiries.</p></div>
+  <div class="grid g2">
+    <a class="card glass rev" style="--c:#4f9dff" href="mailto:error@corita.gg"><i class="ic fa-solid fa-envelope"></i><div><b>Email</b><span>error@corita.gg</span></div></a>
+    <a class="card glass rev" style="--c:#ff3d5a" href="mailto:hi@errorr.cc.cd"><i class="ic fa-solid fa-briefcase"></i><div><b>Inquiries</b><span>hi@errorr.cc.cd</span></div></a>
+  </div>
+</div>
+
+<div class="sec rv" id="music">
+  <div class="head"><small>05</small><h2>Music</h2><p>Pick a track, change it, and set the volume.</p></div>
+  <div class="mcard glass">
+    <img id="mcov" alt="Music cover">
+    <div class="mbody">
+      <b id="mtit">MUSIC 1</b><span id="mst">Track 1 / 9</span>
+      <div class="mbar"><em id="mcur">0:00</em><input type="range" id="mseek" min="0" max="1000" value="0" aria-label="Seek"><em id="mdur">0:00</em></div>
+      <div class="mctl">
+        <button id="mprev" aria-label="Previous"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="mplay" class="big" aria-label="Play"><i class="fa-solid fa-play"></i></button>
+        <button id="mnext" aria-label="Next"><i class="fa-solid fa-forward-step"></i></button>
+        <span class="vol"><button id="mvd" aria-label="Volume down"><i class="fa-solid fa-volume-low"></i></button><input type="range" id="mvol" min="0" max="100" value="60" aria-label="Volume"><button id="mvu" aria-label="Volume up"><i class="fa-solid fa-volume-high"></i></button></span>
+      </div>
+      <div class="mlist" id="mlist"></div>
+    </div>
+  </div>
+</div>
+
+<footer>&copy; 2026 Error. All rights reserved.</footer>
+</main>
+
+<div class="stage" aria-hidden="true"><div class="girl" id="girl"><canvas id="g"></canvas><i class="mz" id="mz"></i></div></div>
+<div aria-hidden="true" class="spider" id="spider"><div class="thread" id="thread"></div><video id="spiderv" loop muted playsinline preload="auto"></video><div class="handle" id="handle" tabindex="-1"></div></div>
+<audio id="au" loop preload="auto"><source src="https://files.catbox.moe/hmcn5g.mp3" type="audio/mpeg"></audio>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+<script src="spider.js"></script>
+</body>
+</html>
